@@ -18,20 +18,13 @@ export default class SelectedBeasts extends React.Component{
     return (
       <>
         <Modal show={this.props.show} onHide={this.handleClose}>
-        <Modal.Header>
-          </Modal.Header>
-          <Modal.Body> You have selected a beast!
-          {/* <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={this.props.url }/>
+          <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={this.props.selectedBeast.image_url}/>
             <Card.Body>
-              <Card.Title>{this.props.title}</Card.Title>
-              <Card.Text>{this.props.description}</Card.Text>
+              <Card.Title>{this.props.selectedBeast.title}</Card.Title>
+              <Card.Text>{this.props.selectedBeast.description}</Card.Text>
             </Card.Body>
-          </Card> */}
-          </Modal.Body>
-          <Modal.Footer>
-          </Modal.Footer>
-
+          </Card> 
         </Modal>
       </>
     )

@@ -11,7 +11,8 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false
+      show: false,
+      selectedBeast: {}
     }
   }
 
@@ -23,13 +24,20 @@ export default class App extends React.Component {
     this.setState({show: false})
   }
 
+  selectBeast = (beast) => {
+    this.setState({
+      selectedBeast: beast
+    })
+    this.showModal();
+  }
+
   render() {
     return(
       <div>
         <Header />
-        <Main beastarray={beastArray} showModal={this.showModal}/>
+        <Main beastarray={beastArray} selectBeast = {this.selectBeast}/>
         <Footer />
-        <SelectedBeast show={this.state.show} hideModal={this.hideModal}/>
+        <SelectedBeast show={this.state.show} selectedBeast= {this.state.selectedBeast} hideModal={this.hideModal}/>
       </div>
     )
   }
