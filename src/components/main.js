@@ -13,7 +13,12 @@ export default class Main extends React.Component {
       <Container>
         <Row xs={1} sm={2} md={3} lg={4}>
           {beastArray.map((beast) => (
-            <HornedBeasts title={beast.title} url={beast.image_url} description={beast.description} handleShow={this.props.showModal} />
+            <HornedBeasts 
+            beast = {beast}
+            title={beast.title} 
+            url={beast.image_url} 
+            description={beast.description} 
+            selectBeast={this.props.selectBeast} />
           ))}
         </Row>
       </Container>

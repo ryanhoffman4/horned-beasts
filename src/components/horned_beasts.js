@@ -15,10 +15,14 @@ export default class HornedBeasts extends React.Component {
     this.setState({timesClicked: this.state.timesClicked + 1})
   }
 
+  handleClick = () => {
+    this.props.selectBeast(this.props.beast)
+  }
+
   render() {
     return(
       <Card style={{ width: '18rem' }}>
-        <Card.Img onClick={this.props.handleShow} variant="top" src={this.props.url }/>
+        <Card.Img onClick={this.handleClick} variant="top" src={this.props.url }/>
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>{this.props.description}</Card.Text>
