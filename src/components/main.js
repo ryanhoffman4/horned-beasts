@@ -4,15 +4,22 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 //import constructed components
 import HornedBeasts from './horned_beasts.js';
-import beastArray from '../data.json'
+
 
 export default class Main extends React.Component {
+
+  
   render() {
     return (
-    <>
-      <Container>
-        <Row xs={1} sm={2} md={3} lg={4}>
-          {beastArray.map((beast) => (
+      <>
+        <Container>
+          <Row xs={1} sm={2} md={3} lg={4}>
+              
+
+
+
+          {this.props.filteredArray.map((beast) => (
+
             <HornedBeasts 
             beast = {beast}
             title={beast.title} 
@@ -20,9 +27,13 @@ export default class Main extends React.Component {
             description={beast.description} 
             selectBeast={this.props.selectBeast} />
           ))}
-        </Row>
-      </Container>
-    </>
+
+
+
+
+          </Row>
+        </Container>
+      </>
     )
   }
 }
