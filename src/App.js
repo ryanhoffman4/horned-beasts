@@ -20,7 +20,7 @@ export default class App extends React.Component {
 
   filterArray = (horn_number) => {
     let dummy_array = [];
-    dummy_array = beastArray.filter((beast) => beast.horns == horn_number);
+    dummy_array = beastArray.filter((beast) => beast.horns === horn_number);
     console.log(dummy_array);
     this.setState({filteredArray: dummy_array});
     console.log(this.state.filteredArray);
