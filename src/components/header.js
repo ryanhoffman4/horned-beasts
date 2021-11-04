@@ -1,5 +1,5 @@
 import React from 'react';
-import DropMenu from './DropMenu.js';
+import HornMenu from './HornMenu.js';
 
 export default class Header extends React.Component {
 
@@ -7,7 +7,7 @@ export default class Header extends React.Component {
     return(
       <div>
         <h1>Horned Beasts</h1> 
-        <DropMenu filterArray={this.props.filterArray}/>
+        <HornMenu renderArray={this.props.renderArray}/>
       </div>
     )
   }

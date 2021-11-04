@@ -8,8 +8,6 @@ import Card from 'react-bootstrap/Card';
 
 export default class SelectedBeasts extends React.Component{
 
- // const [show, setShow] = useState(false);
-
  handleClose = () => {
    this.props.hideModal();
  }
