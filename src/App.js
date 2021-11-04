@@ -18,10 +18,11 @@ export default class App extends React.Component {
   }
 
   renderArray = (horn_value) => {
-    if (horn_value == 0) {
+    let number = Number(horn_value)
+    if (number === 7) {
     this.setState({renderedArray: beastArray})
     } else {
-    this.setState({renderedArray: beastArray.filter((beast) => beast.horns == horn_value)})
+    this.setState({renderedArray: beastArray.filter((beast) => beast.horns === number)})
     }
     this.render();
   }

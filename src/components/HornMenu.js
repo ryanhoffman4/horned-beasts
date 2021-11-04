@@ -17,7 +17,7 @@ export default class HornMenu extends React.Component {
               <Form.Check
                 inline
                 label="Any"
-                value="0"
+                value="7"
                 name="group1"
                 type={type}
                 id={`inline-${type}-1`}
