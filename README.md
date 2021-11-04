@@ -1,13 +1,30 @@
-### Horned Beasts
+### Horned Beasts!
 
+#### About this project:
+- This project is meant to showcase competency with creating react applications, emphasizing an understanding of component architecture, bootstrap modifications, and handling props and state between components.  
 
-#### Lab 01: 
+#### Features:
 
-- The goal of Lab 01 is to initialize a react application and to use react components to build the basic structure of a webage entirely with Javascript. To start, there is an app component that renders a header, footer, and main component.  The main component renders two horned beast components.  Each horned beast component renders a title, image, and description of the image.  
+##### Feature 1: A rendered array of objects
+- Estimate of time needed to complete: 3hrs
+- Start time: 7pm
+- Finish time: 2:15 am
+- Actual time needed to complete: 7hrs 15mins, trouble with repo set up
 
+##### Feature 2: Objects are responsive to clicks
+- Estimate of time needed to complete: 4 hrs
+- Start time: 2:00 am
+- Finish time: 3:40 am
+- Actual time needed to complete: 1hr 40mins
 
-#### Lab 02:
+##### Feature 3: A modal displays selected objects
+- Estimate of time needed to complete: 2 hrs
+- Start time: 2:00 am
+- Finish time: 6:40 am
+- Actual time needed to complete: 4hrs 40mins
 
-- The goal of Lab 02 is to practice using state and props in a react application, to incorporate functions within react components, and to deploy react applications with Netlify.
-
- 
+##### Feature 4: A form filters the rendered object array
+- Estimate of time needed to complete: 3 hrs
+- Start time: 10/28
+- Finish time: 11/3
+- Actual time needed to complete: hrs over several days (approx 5)
