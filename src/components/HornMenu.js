@@ -2,9 +2,6 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 
 export default class HornMenu extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   handleClick = (event) => {
     this.props.renderArray(event.target.value);
